@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <img
+            class="bi me-2"
+            width="40"
+            height="32"
+            src="images/R.png"
+            alt=""
+            width="720"
+          />
+          <span class="fs-4">Website Title</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="text-muted nav-link" href="#">
+              <svg
+                class="bi"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="text-muted nav-link"
+              href="#"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#search"
+              id="search-btn"
+            >
+              <svg
+                class="bi"
+                width="34"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+                />
+              </svg>
+            </a>
+            <!-- modal -->
+            <div class="modal bg-primary" id="search">
+              <div class="modal-dialog modal-fullscreen bg-primary">
+                <div class="modal-content">
+                  <div class="mx-auto fs-4 my-5 text-center">
+                    <strong class="search-title">Website Name</strong> <br />
+                    look something app
+                  </div>
+                  <button
+                    class="btn position-absolute end-0 top-0 m-4"
+                    data-bs-dismiss="modal"
+                    id="modal-btn"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                      class="svg rounded-circle bg-black-50"
+                    >
+                      <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                      <path
+                        d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+                      />
+                    </svg>
+                  </button>
+                  <form action="" class="form my-auto">
+                    <div
+                      class="input-group mx-auto w-50 border-bottom border-2"
+                    >
+                      <input
+                        type="text"
+                        name="search"
+                        id="search-input"
+                        class="form-control border-0 ps-5"
+                        placeholder="Search..."
+                      />
+                      <button type="submit" class="btn border-0">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 384 512"
+                          class="svg btn-submit"
+                        >
+                          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                          <path
+                            d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="text-muted nav-link notify"
+              count="3"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              <svg
+                class="bi"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"
+                />
+              </svg>
+            </a>
+            <ul
+              class="dropdown-menu position-absoulte gap-1 p-2 rounded-3 mx-0 shadow w-220px"
+            >
+              <li>
+                <a class="dropdown-item rounded-2" href="#"
+                  >Lorem, ipsum dolor.</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item rounded-2" href="#"
+                  >Lorem, ipsum dolor.</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item rounded-2" href="#"
+                  >Lorem, ipsum dolor.</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <div class="container ps-5">
+      <div class="h1 d-inline-block">result for...</div>
+      <div class="h1 d-inline-block">"</div>
+      <div class="h3 d-inline-block">something</div>
+      <div class="h1 d-inline-block">"</div>
+    </div>
+    <div
+      class="container pb-5 pt-3 d-flex justify-content-around align-items-center"
+    >
+      <div class="input-group w-75">
+        <div class="form-control d-flex flex-row rounded-pill ps-5">
+          <input
+            type="text"
+            class="form-control-plaintext"
+            placeholder="Search..."
+            name="Search"
+            value="something"
+          />
+          <button type="button" class="btn">
+            <svg
+              class="bi"
+              width="34"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#filter"
+      >
+        <svg
+          class="bi"
+          width="34"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="modal modal-sheet bg-secondary py-5"
+      tabindex="-1"
+      role="dialog"
+      id="filter"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header border-bottom-0">
+            <h1 class="modal-title fs-5">فلتر النتائج</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="form-group mb-3">
+              <label for="" class="headding mb-2">التصنيف</label>
+              <ul class="ks-cboxtags">
+                <li>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox1"
+                    value="1"
+                  /><label for="checkbox1">aaa</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox2"
+                    value="2"
+                  /><label for="checkbox2">aaa</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox3"
+                    value="3"
+                  /><label for="checkbox3">aaa</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox4"
+                    value="3"
+                  /><label for="checkbox4">aaa</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox4"
+                    value="2"
+                  /><label for="checkbox4">aaa</label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group mb-3">
+              <label for="" class="headding mb-2">السعر</label>
+              <section class="btn-group d-block">
+                <div class="m-2">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="gfg"
+                    checked
+                  />
+                  <label class="btn btn-outline-primary" for="gfg">
+                    أقل من 100$
+                  </label>
+                </div>
+
+                <div class="m-2">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="gfg2"
+                  />
+                  <label class="btn btn-outline-primary" for="gfg2">
+                    من 100$ الي 300$
+                  </label>
+                </div>
+                <div class="m-2">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="gfg3"
+                  />
+                  <label class="btn btn-outline-primary" for="gfg3">
+                    من 300$ الي 1000$
+                  </label>
+                </div>
+                <div class="m-2">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="gfg4"
+                  />
+                  <label class="btn btn-outline-primary" for="gfg4">
+                    أكثر من 1000$
+                  </label>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="modal-footer flex-column border-top-0">
+            <button
+              type="button"
+              class="btn btn-lg btn-primary w-100 mx-0 mb-2"
+            >
+              فلتر
+            </button>
+            <button
+              type="button"
+              class="btn btn-lg btn-light w-100 mx-0"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex flex-row flex-wrap">
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 p-2 mt-3">
+        <div
+          class="text-bg-primary product me-md-3 pt-2 px-3 rounded text-center"
+          price="30USD"
+        >
+          <a class="my-2 py-1 text-bg-primary text-decoration-none" href="#">
+            <h2 class="h5">Some Title</h2>
+            <p class="h6">And some more on caption</p>
+          </a>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; border-radius: 21px 21px 0 0"
+          >
+            <img
+              src="images/undraw_freelancer_re_irh4.svg"
+              class="w-100 h-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="pagination justify-content-center mt-3">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg
+                class="bi"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg
+                class="bi"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#">
+              <svg
+                class="bi"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+  </body>
+</html>
